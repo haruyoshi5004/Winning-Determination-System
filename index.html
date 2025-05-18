@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <title>ランダム当たりゲーム</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>景品確認！</h1>
+        <p>1から200までの数字を入力してください</p>
+        <input type="number" id="inputNumber" min="1" max="200" placeholder="1～200の数を入力">
+        <button id="submitButton">確認する</button>
+
+        <!-- メッセージを表示するエリア -->
+        <p id="resultMessage"></p>
+
+        <!-- 以下23行目と24行目コメントアウトで当たり番号の可視化部分を隠す。 当たりがどの番号なのか動作確認時に可視化を使う
+        
+        <h2>当たり番号の可視化</h2>
+        <div id="winnerList" class="winner-list"></div>-->
+
+
+
+                
+    </div>
+    
+        
+    
+
+
+    <audio id="winSound" src="win-sound.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.js"></script>
+
+</body>
+</html>

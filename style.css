@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultMessage {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cuteFont {
+    font-family: 'Caveat', cursive !important;
+    font-size: 50px !important;
+    color: #fffffd !important;
+    text-shadow: 2px 2px 8px rgba(13, 243, 147, 0.7) !important;
+}
+
+
+
+
+
+.winner-list {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.winner-list span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.winner-list .hit {
+    background-color: #4CAF50;
+    color: white;
+}
+.flash {
+    animation: flash-animation 0.5s infinite alternate;
+}
+
+
+
+
+
+#fullscreenMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 223, 0, 0.9); /* Bright yellow with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fullscreen-flash 0.5s alternate infinite; /* Flash effect */
+}
+
+#fullscreenMessage h1 {/*ぶんこちゃんが当たった時に表示される文のcss*/
+    font-size: 70px;
+    color: rgb(245, 219, 219);
+    text-shadow: 2px 2px 8px #000;
+}
+
+@keyframes fullscreen-flash {/*ぶんこちゃんが当たった時に表示される背景css*/
+    0% { background-color: rgba(255, 255, 255, 0.9); }
+    100% { background-color: rgba(196, 245, 200, 0.9); }
+}
+
+#fireworksContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none; /* Make sure clicks don't get blocked by the fireworks */
+}
+
+@keyframes flash {
+    0% { background-color: #f48fb1; }
+    50% { background-color: white; }
+    100% { background-color: #f48fb1; }
+}
+
+.flash-screen {
+    animation: flash 0.5s ease-in-out infinite;
+}
+
