@@ -18,7 +18,7 @@
 
 ##  ファイル構成
 
-project-folder/
+
 ├── index.html              # メイン画面・UI
 │   ├── win-sound.mp3       # <audio> で読み込まれる効果音
 │   └── fireworks-js/       # <script> で読み込まれる花火ライブラリ
