@@ -19,12 +19,11 @@
 ##  ファイル構成
 
 
-├── index.html              # メイン画面・UI
-│   ├── win-sound.mp3       # <audio> で読み込まれる効果音
-│   └── fireworks-js/       # <script> で読み込まれる花火ライブラリ
-
-├── style.css # レイアウトと当たり時の演出デザイン
-├── script.js # 当たり判定ロジックと演出制御
+-├── index.html              # メイン画面・UI
+-│   ├── win-sound.mp3       # <audio> で読み込まれる効果音
+-│   └── fireworks-js/       # <script> で読み込まれる花火ライブラリ
+-├── style.css # レイアウトと当たり時の演出デザイン
+-├── script.js # 当たり判定ロジックと演出制御
 
 
 ---
